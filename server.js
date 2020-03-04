@@ -3,6 +3,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
+const { flights } = require('./test-data/flightSeating');
 
 const PORT = process.env.PORT || 8000;
 
@@ -28,7 +29,7 @@ express()
         })
     })
     .get('/confirmed', (req, res) => {
-        
+
     })
     // .get('/view-reservation')
 
